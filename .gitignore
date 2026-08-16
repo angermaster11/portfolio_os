@@ -1,0 +1,88 @@
+# ═══════════════════════════════════════════
+#  ROOT .gitignore — Portfolio Project
+#  Covers: frontend (Vite/React) + backend (Node/Express)
+# ═══════════════════════════════════════════
+
+# ──────────────────────────────────────────
+# Dependencies — KABHI PUSH MAT KARNA 
+# ──────────────────────────────────────────
+node_modules/
+**/node_modules/
+
+# ──────────────────────────────────────────
+# Environment Variables — SECRETS HAI 
+# ──────────────────────────────────────────
+.env
+.env.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
+.env.production
+.env.production.local
+**/.env
+**/.env.*
+
+# ──────────────────────────────────────────
+# Build Output (Frontend)
+# ──────────────────────────────────────────
+frontend/dist/
+frontend/dist-ssr/
+frontend/.vite/
+
+# ──────────────────────────────────────────
+# Uploads (User/Admin uploaded files)
+# ──────────────────────────────────────────
+backend/uploads/
+uploads/
+
+# ──────────────────────────────────────────
+# Logs
+# ──────────────────────────────────────────
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ──────────────────────────────────────────
+# OS Generated Files
+# ──────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# ──────────────────────────────────────────
+# Editor / IDE Configs
+# ──────────────────────────────────────────
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.swp
+*.swo
+.project
+.classpath
+.settings/
+
+# ──────────────────────────────────────────
+# Misc
+# ──────────────────────────────────────────
+*.local
+*.tgz
+*.tar.gz
+.cache/
+.parcel-cache/
+coverage/
+.nyc_output/
