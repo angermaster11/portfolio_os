@@ -18,7 +18,12 @@ function FullscreenPrompt({ onClose }) {
         <div className="fullscreen-overlay">
             <div className="fullscreen-modal">
                 <div className="fs-glow-ring" />
-                <div className="fs-icon">🖥️✨</div>
+                <div className="fs-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                        <rect x="2" y="3" width="20" height="14" rx="2"/>
+                        <path d="M8 21h8M12 17v4"/>
+                    </svg>
+                </div>
 
                 <h2 className="fs-title">Full Screen Experience</h2>
                 <p className="fs-subtitle">
@@ -27,11 +32,11 @@ function FullscreenPrompt({ onClose }) {
 
                 <div className="fs-actions">
                     <button className="fs-btn fs-btn-primary" onClick={handleYes}>
-                        <span>Yes, Let's Go! 🚀</span>
+                        <span>Yes, Let's Go</span>
                     </button>
 
                     <button className="fs-btn fs-btn-secondary" onClick={handleNo}>
-                        <span>No, I'm a boring person 😴</span>
+                        <span>Continue in window</span>
                     </button>
                 </div>
             </div>
@@ -40,3 +45,4 @@ function FullscreenPrompt({ onClose }) {
 }
 
 export default FullscreenPrompt;
+
