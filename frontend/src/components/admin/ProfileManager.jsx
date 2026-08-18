@@ -29,7 +29,7 @@ function ProfileManager() {
             const data = await apiGet("/profile");
             setProfile(data.data);
             if (data.data.photo) {
-                setPhotoPreview(`http://localhost:3000${data.data.photo}`);
+                setPhotoPreview(data.data.photo);
             }
         } catch (err) {
             console.error("Failed to load profile:", err);

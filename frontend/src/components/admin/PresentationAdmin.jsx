@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { apiGet, apiPost, apiDelete } from "../../hooks/useApi";
 
-const API_BASE = "http://localhost:3000";
+const API_BASE = "";
 
 function PresentationAdmin() {
     const [title, setTitle] = useState("My Portfolio Presentation");

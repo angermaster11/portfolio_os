@@ -113,9 +113,6 @@ export function AudioProvider({ children }) {
         const audio = audioRef.current;
 
         let src = currentTrack.audioUrl;
-        if (src.startsWith("/uploads")) {
-            src = `http://localhost:3000${src}`;
-        }
 
         const wasPlaying = isPlaying;
         if (audio.src !== src) {
@@ -138,9 +135,6 @@ export function AudioProvider({ children }) {
             setIsPlaying(true);
 
             let src = tracks[index].audioUrl;
-            if (src.startsWith("/uploads")) {
-                src = `http://localhost:3000${src}`;
-            }
 
             const audio = audioRef.current;
             audio.src = src;

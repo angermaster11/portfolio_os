@@ -48,7 +48,7 @@ function ProfileViewer() {
             <div className="pv-header">
                 <div className="pv-avatar">
                     {profile.photo ? (
-                        <img src={`http://localhost:3000${profile.photo}`} alt="Profile" />
+                        <img src={profile.photo} alt="Profile" />
                     ) : (
                         <span className="pv-avatar-placeholder">
                             {(profile.name || "U")[0].toUpperCase()}

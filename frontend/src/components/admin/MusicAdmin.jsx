@@ -281,7 +281,7 @@ function MusicAdmin() {
                             <div key={track._id} className="music-admin-item">
                                 <div className="m-cover">
                                     {track.coverUrl ? (
-                                        <img src={`http://localhost:3000${track.coverUrl}`} alt={track.title} />
+                                        <img src={track.coverUrl} alt={track.title} />
                                     ) : (
                                         <div className="m-cover-fallback">🎵</div>
                                     )}

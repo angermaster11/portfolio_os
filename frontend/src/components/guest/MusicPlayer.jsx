@@ -41,7 +41,7 @@ function MusicPlayer() {
             return "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80";
         }
         if (track.coverUrl.startsWith("/uploads")) {
-            return `http://localhost:3000${track.coverUrl}`;
+            return track.coverUrl;
         }
         return track.coverUrl;
     };

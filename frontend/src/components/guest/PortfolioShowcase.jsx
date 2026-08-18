@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback } from "react";
 import { apiGet } from "../../hooks/useApi";
 import FormattedText from "../common/FormattedText";
 
-const API_BASE = "http://localhost:3000";
+const API_BASE = "";
 
 function PortfolioShowcase() {
     const [profile, setProfile] = useState(null);
